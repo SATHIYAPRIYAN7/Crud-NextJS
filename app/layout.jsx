@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Providers } from "./providers"
 
@@ -17,7 +16,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`font-sans antialiased`}>
         <Providers>{children}</Providers>
-        <Analytics />
       </body>
     </html>
   )
